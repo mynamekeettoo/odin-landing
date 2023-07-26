@@ -17,7 +17,7 @@ body {
     margin-bottom: 128px;
 }
 
-#logo {
+#logo, h1 {
     font-size: 24px;
     color: #F9FAF8;
 }
@@ -37,12 +37,18 @@ body {
     font-size: 18px;
 }
 
+p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 .banner {
     padding-bottom: 128px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 96px;
+    flex: 1 1 auto;
 }
 
 .banner-left {
@@ -53,9 +59,16 @@ body {
 .banner-image {
     background-color: #E5E7EB;
     padding: 128px;
-    flex-grow: 0;
 }
 
 .header button {
-    background-color: #3882F6
+    background-color: #3882F6;
+    width: 100px;
+    border-radius: 8px;
+    padding: 8px 4px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
 }
