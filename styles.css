@@ -13,13 +13,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 48px;
+    height: 64px;
     margin-bottom: 128px;
+    padding-top: 36px;
 }
 
 #logo, h1 {
     font-size: 24px;
     color: #F9FAF8;
+}
+
+#logo {
+    width: 200px;
 }
 
 .navigation li {
@@ -74,7 +79,11 @@ p {
     color: #E5E7EB;
 }
 
-.header button {
+button {
+
+}
+
+button {
     background-color: #3882F6;
     width: 128px;
     border-radius: 8px;
@@ -94,6 +103,11 @@ h1 {
     padding-left: 256px;
     padding-right: 256px;
     padding-top: 64px;
+    align-items: flex-end;
+}
+
+.fix-postion {
+    object-position: 0 -100%;
 }
 
 .illustration {
@@ -102,6 +116,7 @@ h1 {
     border: #3882F6;
     border-style: solid;
     border-radius: 16px;
+    object-fit: cover;
 }
 
 .illustration-heading {
@@ -147,7 +162,6 @@ h1 {
     font-style: italic;
     color: #1F2937;
     align-self: center;
-    /* max-width: 1024px; */
 }
 
 .name {
@@ -156,4 +170,48 @@ h1 {
     color: #1F2937;
     align-self: flex-end;
     padding-right: 36px;
+}
+
+.call-to-action-section {
+    height: auto;
+    padding-left: 128px;
+    padding-right: 128px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: center;
+}
+
+.call-to-action-block {
+    background-color: #3882F6;
+    border-radius: 16px;
+    padding: 16px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 128px;
+    width: 1024px;
+}
+
+.call-to-action-block h3 {
+    font-size: 24px;
+    color: #F9FAF8;
+    margin-bottom: 8px;
+}
+
+.call-to-action-block button {
+    border-color: white;
+}
+
+.call-to-action-block p {
+    flex: 1;
+}
+
+.footer {
+    background-color: #1F2937;
+    height: auto;
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
